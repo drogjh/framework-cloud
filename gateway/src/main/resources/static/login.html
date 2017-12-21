@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>framework-cloud</title>
+    <meta name="keywords" content="微服务管理系统">
+    <meta name="description" content="微服务管理系统">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/login.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html">
+    <![endif]-->
+    <script>
+        if (window.top !== window.self) {
+            window.top.location = window.location;
+        }
+    </script>
+
+</head>
+
+<body class="signin">
+<div class="signinpanel">
+    <div class="row">
+        <div class="col-sm-7">
+            <div class="signin-info">
+                <div class="logopanel m-b">
+                    <h1>微服务</h1>
+                </div>
+                <div class="m-b"></div>
+                <h3>
+                    <strong>后台管理系统</strong>
+                </h3>
+                <ul class="m-b">
+                    <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i>字典管理</li>
+                    <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i>帐号管理</li>
+                    <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i>角色管理</li>
+                    <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i>菜单管理</li>
+                    <li><i class="fa fa-arrow-circle-o-right m-r-xs"></i>机构管理</li>
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="col-sm-5">
+            <form id="signupForm">
+                <h3 class="text-center">用户登录</h3>
+                <p class="m-t-md text-center">欢迎登录后台管理系统</p>
+                <input type="text" name="username" id="username" class="form-control uname"/>
+                <input type="password" name="password" id="password" class="form-control pword m-b" />
+                <button class="btn btn-login btn-block">登录</button>
+            </form>
+        </div>
+    </div>
+    <div class="signup-footer">
+        <div class="pull-left">&copy; 2017 All Rights Reserved.
+        </div>
+    </div>
+</div>
+<!-- 全局js -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- 自定义js -->
+<script src="/js/content.js?v=1.0.0"></script>
+
+<!-- jQuery Validation plugin javascript-->
+<script src="/js/plugins/validate/jquery.validate.min.js"></script>
+<script src="/js/plugins/validate/messages_zh.min.js"></script>
+<script src="/js/plugins/layer/layer.min.js"></script>
+
+<script src="/js/appjs/launch.js"></script>
+<script src="/js/appjs/login/login.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: auth-service
+  cloud:
+    config:
+      uri: http://config:8888
+      fail-fast: true
+      username: user
+      password: ${CONFIG_SERVER_PASSWORD:password}
+      retry:
+        initial-interval: 2000
+        max-interval: 10000
+        multiplier: 2
+        max-attempts: 10
+
+uaa:
+  url: http://localhost:8060/uaa
+  # Client ID on whose behalf the access_token will be verified by Resource Server
+  clientId: client
+  clientSecret: secret
+
+logging:
+    level:
+      org.springframework.security: DEBUG
