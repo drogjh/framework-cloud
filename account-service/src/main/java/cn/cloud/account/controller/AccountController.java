@@ -1,6 +1,5 @@
 package cn.cloud.account.controller;
 
-import cn.cloud.account.client.IdGenServiceClient;
 import cn.cloud.account.domain.User;
 import cn.cloud.account.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;

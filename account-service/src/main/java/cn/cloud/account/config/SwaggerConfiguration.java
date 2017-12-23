@@ -66,7 +66,6 @@ public class SwaggerConfiguration {
     }
 
     private OAuth securitySchema() {
-
         List<AuthorizationScope> authorizationScopeList = newArrayList();
         authorizationScopeList.add(new AuthorizationScope("read", "read all"));
         authorizationScopeList.add(new AuthorizationScope("trust", "trust all"));
@@ -112,9 +111,13 @@ public class SwaggerConfiguration {
     }
 
     private ApiInfo apiInfo() {
-        return new ApiInfoBuilder().title("account service").description("")
-                .termsOfServiceUrl("https://www.example.com/api")
-                .contact(new Contact("andy", "http://www.example.com", "zxgangandy@gmail.com"))
-                .license("Open Source").licenseUrl("https://www.example.com").version("1.0.0").build();
+        return new ApiInfoBuilder()
+                .title("account service")
+                .description("")
+                .termsOfServiceUrl("https://github.com/zxgangandy")
+                .contact(new Contact("andy", "https://github.com/zxgangandy", "zxgangandy@gmail.com"))
+                .license("Open Source")
+                .licenseUrl("https://github.com/zxgangandy")
+                .version("1.0.0").build();
     }
 }
